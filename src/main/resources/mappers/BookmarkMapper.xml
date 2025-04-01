@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.andh.mymybatis.model.mapper.BookmarkMapper">
+
+    <insert id="insertBookmark" parameterType="org.andh.mymybatis.model.vo.KeywordSearchDTO">
+        INSERT INTO search_result_bookmark (title, link, description, date)
+        VALUES (#{title}, #{link}, #{description}, #{date})
+    </insert>
+
+</mapper>
